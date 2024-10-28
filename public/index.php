@@ -30,7 +30,7 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="show-password">
+                <input type="checkbox" class="form-check-input" id="show-password" onclick="mostrarContrasena()">
                 <label class="form-check-label" for="show-password">Mostrar Contraseña</label>
             </div>
             <div class="text-center">
@@ -42,7 +42,6 @@
         <p>No estoy registrado, <a href="register.php">Registrarse</a></p>
         <a href="#" class="politica-privacidad">Aviso Legal y Política de Privacidad</a>
     </div>
-    <div id="result"></div>
     <script src="assets/script.js"></script>
 </body>
 </html>

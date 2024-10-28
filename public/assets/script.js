@@ -1,3 +1,5 @@
+
+// Función para validar el formulario de login 
 function login() {
     const correo = document.getElementById('correo').value;
     const password = document.getElementById('password').value;
@@ -19,6 +21,7 @@ function login() {
     });
 }
 
+// Función para registrar un usuario
 function register() {
     const correo = document.getElementById('correo').value;
     const password = document.getElementById('password').value;
@@ -40,6 +43,7 @@ function register() {
     });
 }
 
+// Función para mostrar un mensaje en pantalla
 function mostrarMensaje(mensaje = '', tipo = 'danger') {
     const alertContainer = document.getElementById('alert-container');
     const alertDiv = document.createElement('div');
@@ -51,12 +55,15 @@ function mostrarMensaje(mensaje = '', tipo = 'danger') {
     setTimeout(() => { alertDiv.remove(); }, 2000);
 }
 
+// Función para limpiar los campos del formulario
 function limpiarCampos() {
     document.getElementById('correo').value = '';
     document.getElementById('password').value = '';
 }
 
-function mostrarContrasena() {
-    const password = document.getElementById('password');
-    password.type = password.type === 'password' ? 'text' : 'password';
+// Función para que muestre la contraseña en el input
+function mostrarContrasena() 
+{
+    const inputPassword = document.getElementById('password');
+    inputPassword.type = inputPassword.type === 'password' ? 'text' : 'password';
 }

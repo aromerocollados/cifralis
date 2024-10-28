@@ -30,8 +30,8 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="show-password">
-                <label class="form-check-label" for="show-password" onclick="mostrarContrasena()">Mostrar Contraseña</label>
+                <input type="checkbox" class="form-check-input" id="show-password"  onclick="mostrarContrasena()">
+                <label class="form-check-label" for="show-password">Mostrar Contraseña</label>
             </div>
             <div class="text-center">
                 <button type="button" class="btn btn-primary" onclick="register()">Registrarse</button>
@@ -42,7 +42,6 @@
         <p>Ya tengo cuenta, <a href="index.php">Iniciar sesión</a></p>
         <a href="#" class="politica-privacidad">Aviso Legal y Política de Privacidad</a>
     </div>
-    <div id="result"></div>
     <script src="assets/script.js"></script>
 </body>
 </html>
