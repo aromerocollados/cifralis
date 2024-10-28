@@ -1,4 +1,3 @@
-
 // Función para validar el formulario de login 
 function login() {
     const correo = document.getElementById('correo').value;
@@ -14,7 +13,13 @@ function login() {
     .then(response => response.json())
     .then(data => {
         mostrarMensaje(data.message, data.success ? 'success' : 'danger');
-        if (data.success) limpiarCampos();
+        if (data.success && data.redirect) {
+            setTimeout(() => {
+                window.location = data.redirect;
+            }, 3000); 
+        } else {
+            limpiarCampos();
+        }
     })
     .catch(error => {
         mostrarMensaje('Error de conexión', 'danger');
@@ -36,7 +41,13 @@ function register() {
     .then(response => response.json())
     .then(data => {
         mostrarMensaje(data.message, data.success ? 'success' : 'danger');
-        if (data.success) limpiarCampos();
+        if (data.success && data.redirect) {
+            setTimeout(() => {
+                window.location = data.redirect;
+            }, 3000); 
+        } else {
+            limpiarCampos();
+        }
     })
     .catch(error => {
         mostrarMensaje('Error de conexión', 'danger');
@@ -52,7 +63,7 @@ function mostrarMensaje(mensaje = '', tipo = 'danger') {
     alertDiv.innerText = mensaje;
     alertContainer.appendChild(alertDiv);
 
-    setTimeout(() => { alertDiv.remove(); }, 2000);
+    setTimeout(() => { alertDiv.remove(); }, 3000);
 }
 
 // Función para limpiar los campos del formulario

@@ -1,4 +1,12 @@
 RewriteEngine On
+
+# Redirigir todas las solicitudes a index.php si no es un archivo o directorio existente
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Reglas específicas para las URLs
+RewriteRule ^inicio$ inicio.php [L]
+RewriteRule ^registro$ registro.php [L]
+RewriteRule ^login$ src/login.php [L]
+RewriteRule ^register$ src/register.php [L]

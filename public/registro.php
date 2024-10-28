@@ -12,7 +12,7 @@
     <title>Cifralis</title>
 </head>
 <body id="registro">
-    <div id="alert-container"></div> <!-- Contenedor para la alerta -->
+    <div id="alert-container"></div> 
     <div class="bienvenida mb-4">
         <h1>Regístrate en <span>Cifralis</span></h1>
     </div>

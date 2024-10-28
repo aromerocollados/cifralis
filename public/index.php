@@ -39,7 +39,7 @@
         </form>
     </div>
     <div class="footer-links mt-4">
-        <p>No estoy registrado, <a href="register.php">Registrarse</a></p>
+        <p>No estoy registrado, <a href="registro.php">Registrarse</a></p>
         <a href="#" class="politica-privacidad">Aviso Legal y Política de Privacidad</a>
     </div>
     <script src="assets/script.js"></script>
