@@ -1,0 +1,29 @@
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M100 10L30 50V110C30 151.421 61.3401 189.592 100 200C138.66 189.592 170 151.421 170 110V50L100 10Z"
+    fill="#2563EB"
+  />
+
+  <path
+    d="M100 20L40 55V110C40 146.005 67.1175 179.063 100 188C132.882 179.063 160 146.005 160 110V55L100 20Z"
+    fill="#3B82F6"
+  />
+  
+  <rect x="70" y="90" width="60" height="50" rx="5" fill="#1D4ED8" />
+  
+  <path
+    d="M85 90V70C85 61.7157 91.7157 55 100 55C108.284 55 115 61.7157 115 70V90"
+    stroke="#1D4ED8"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+  
+  <circle cx="100" cy="115" r="8" fill="#60A5FA" />
+  <rect x="97" y="115" width="6" height="15" rx="2" fill="#60A5FA" />
+</svg>

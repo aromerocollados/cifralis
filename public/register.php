@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../logo/logo.svg">
+    <link rel="icon" type="image/x-icon" href="logo/logo.svg">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/style.css">
     <title>Cifralis</title>
 </head>
-<body id="login">
-    <div id="alert-container"></div>
+<body id="registro">
+    <div id="alert-container"></div> <!-- Contenedor para la alerta -->
     <div class="bienvenida mb-4">
-        <h1>Inicia sesión en <span>Cifralis</span></h1>
+        <h1>Regístrate en <span>Cifralis</span></h1>
     </div>
     <div class="login-container">
         <div class="logo">
             <img src="../logo/logo.svg" alt="Logo" width="84" height="84">
         </div>
-        <form id="loginForm">
+        <form id="registerForm">
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="correo" name="correo" required>
@@ -31,15 +31,15 @@
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="show-password">
-                <label class="form-check-label" for="show-password">Mostrar Contraseña</label>
+                <label class="form-check-label" for="show-password" onclick="mostrarContrasena()">Mostrar Contraseña</label>
             </div>
             <div class="text-center">
-                <button type="button" class="btn btn-primary" onclick="login()">Acceder</button>
+                <button type="button" class="btn btn-primary" onclick="register()">Registrarse</button>
             </div>
         </form>
     </div>
     <div class="footer-links mt-4">
-        <p>No estoy registrado, <a href="register.php">Registrarse</a></p>
+        <p>Ya tengo cuenta, <a href="index.php">Iniciar sesión</a></p>
         <a href="#" class="politica-privacidad">Aviso Legal y Política de Privacidad</a>
     </div>
     <div id="result"></div>
