@@ -34,7 +34,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // Verificar si el usuario existe y la contraseña es correcta
 if ($user && password_verify($password, $user['password_hash'])) {
-    echo json_encode(['message' => 'Login exitoso, redirigiendo...', 'success' => true, 'redirect' => 'inicio.php']);
+    echo json_encode(['message' => 'Login exitoso, redirigiendo...', 'success' => true, 'redirect' => 'front_home.php']);
 } else {
     echo json_encode(['message' => 'Correo o contraseña incorrectos', 'success' => false]);
 }

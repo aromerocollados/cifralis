@@ -44,7 +44,7 @@ $stmt->bindParam(':correo', $correo);
 $stmt->bindParam(':password_hash', $password_hash);
 
 if ($stmt->execute()) {
-    echo json_encode(['message' => 'Usuario registrado correctamente, redirigiendo...', 'success' => true, 'redirect' => 'index.php']);
+    echo json_encode(['message' => 'Usuario registrado correctamente, redirigiendo...', 'success' => true, 'redirect' => 'front_login.php']);
 } else {
     echo json_encode(['message' => 'Error al registrar usuario', 'success' => false]);
 }

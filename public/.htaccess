@@ -1,9 +1,12 @@
 RewriteEngine On
 
+# Redirigir la raíz a la carpeta public
+RewriteRule ^$ public/ [L]
+
 # Redirigir todas las solicitudes a index.php si no es un archivo o directorio existente
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
+RewriteRule ^(.*)$ front_login.php [QSA,L]
 
 # Reglas específicas para las URLs
 RewriteRule ^inicio$ inicio.php [L]
