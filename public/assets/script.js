@@ -73,8 +73,18 @@ function limpiarCampos() {
 }
 
 // Función para que muestre la contraseña en el input
-function mostrarContrasena() 
-{
+function mostrarContrasena() {
     const inputPassword = document.getElementById('password');
     inputPassword.type = inputPassword.type === 'password' ? 'text' : 'password';
+}
+
+// Función para cambiar el active de los links
+function cambiarActive() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            navLinks.forEach(link => link.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
 }
