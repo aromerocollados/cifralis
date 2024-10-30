@@ -58,15 +58,52 @@
                     </ul>
                 </div>
             </nav>
+            
             <!-- Main Content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <!-- Add your main content here -->
+            <main id="content" class="col-md-9 ms-sm-auto col-lg-10 px-md-4">    
+                <div class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2 mb-0">Página Principal</h1>
+                    <button id="sidebarToggle" class="btn btn-primary d-md-none ms-auto">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+
+                <div class="quick-access mb-4">
+                    <h4>Acceso Rápido</h4>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <button class="btn btn-light w-100"><i class="bi bi-plus-circle"></i> Nueva Contraseña</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-light w-100"><i class="bi bi-search"></i> Buscar Contraseña</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-light w-100"><i class="bi bi-shield-check"></i> Análisis de Seguridad</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Resumen de Contraseñas</h5>
+                                <p class="card-text">Total: 30</p>
+                                <p class="card-text">Fuertes: 18</p>
+                                <p class="card-text">Débiles: 12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/script.js"></script>
-    <script>cambiarActive() </script>
+    <script>
+        cambiarActive() 
+        mostrarSidebar()
+    </script>
 </body>
 </html>

@@ -156,3 +156,18 @@ function cerrarSesion() {
 
     document.body.appendChild(overlay);
 }
+
+// Función mostrar sidebar en dispositivos móviles 
+function mostrarSidebar() {
+    const sidebarToggle = document.getElementById("sidebarToggle");
+    const sidebar = document.getElementById("sidebar");
+
+    sidebarToggle.addEventListener("click", function (event) {
+        event.stopPropagation(); 
+        sidebar.classList.toggle("show"); 
+    });
+
+    document.addEventListener("click", function () {
+        sidebar.classList.remove("show"); 
+    });
+}
