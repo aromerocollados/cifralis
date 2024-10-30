@@ -2,6 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: /cifralis/src/login.php");
+header("Location: /cifralis/public/front_login.php");
 exit();
 ?>
